@@ -1,0 +1,45 @@
+function menu {
+echo "1-Agregar usuario"
+echo "2-Ingresar"
+echo "5-Salir"
+read -p "Ingrese una opcion: " op
+clear
+case $op in
+
+1)
+read -p "Ingrese su nombre de usuario: " nom
+read -p "Ingrese su contraseña: " contra
+if id $nom &> /dev/null;
+then
+echo "Bienvenido $nom"
+sleep 2
+else
+echo "el usuario ya existe"
+sleep 2
+fi
+clear
+menu;;
+
+2)
+read -p "Ingrese su nombre de usuario: " nom
+read -p "Ingrese su contraseña: " contra
+if  id $nom &> /dev/null && id $contra &> /dev/null
+then
+echo "El usuario no existe"
+clear
+sleep 2
+else
+clear
+sh script2.sh
+clear
+sleep 2
+fi
+clear
+menu;;
+
+3)
+clear
+exit;;
+esac
+}
+menu
