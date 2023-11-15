@@ -1,0 +1,18 @@
+main{
+    background-image: url(../src/pattern.jpg);
+    min-height: 100vh;
+  }
+
+.d-block {
+    height: 1rem;
+}
+.Aviso {
+    font-size: small;
+} 
+.Error {
+    font-size: small;
+    color: red;
+} 
+.principal {
+    width: 25rem;
+} 

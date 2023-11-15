@@ -1,0 +1,163 @@
+/*Encabezado*/
+.nav-link {
+  color: rgb(204, 132, 0);
+  font-size: 190px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(204, 132, 0);
+  transition: 4s;
+}
+
+img
+{
+  max-width:100%;
+}
+
+.cols-med
+{
+  
+  display:flex;
+  padding:30px;
+  background:gray;
+  font-weight:bold;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+
+}
+
+
+
+nav { 
+  background-color: rgb(255, 165, 0);
+
+  }
+.nav-item:hover {
+      background: rgb(204, 132, 0);
+      transition: 1s;
+      border-radius: 100px;
+    }
+
+
+/*Columnas Menu*/
+
+.col{
+  
+  display:flex;
+  align-items:end;
+  justify-content:center;
+  padding:30px;
+  height:30vh;
+  
+}
+
+.coltit {
+  display: flex;
+  text-align: left;
+  align-items:center;
+  
+  
+}
+
+.colmap{
+  
+
+  align-items:end;
+  justify-content:center;
+  padding:30px;
+  height:100%;
+  justify-content: center;
+width: 10px;
+  font-size:larger;
+  
+}
+.colum{
+  
+
+  align-items:end;
+  justify-content:center;
+  padding:30px;
+  height:100%;
+  justify-content: center;
+
+  font-size:larger;
+  
+}
+
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/*Fondo y titulos*/
+main {
+  background-image: url(../src/pattern.jpg);
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+li{
+  font-size: 20px;
+  }
+.Titulo h1{
+text-align: center;
+}
+.Titulo h2{
+  text-align: left;
+}
+.colmap p{
+  font-size:small;
+}
+
+
+
+
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(255, 165, 0);
+}
+.pie-pagina .parte-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:5px;
+    padding: 45px 0px;
+}
+.pie-pagina .parte-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .parte-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .parte-1 .box h2{
+    color:white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .parte-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+.pie-pagina .parte-2{
+    background-color: rgb(204, 132, 0);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .parte-2 small a{
+  text-decoration: none; 
+  color: inherit; 
+  font-size: 15px;
+}
+

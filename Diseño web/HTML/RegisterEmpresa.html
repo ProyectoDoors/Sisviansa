@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../src/TuLogo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sisviansa-Register</title>
+  <link rel="stylesheet" href="../CSS/RegisterEmpresa.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="../Boostrap/js/jquery-3.3.1.min.js"></script>
+  <script src="../JS/RegisterEmpresa.js"></script>
+</head>
+
+
+
+<body>
+  <main class="bg-secondary d-flex justify-content-center align-items-center vh-200">
+    <section class="bg-white p-5 rounded-5 text-secondary shadow principal">
+
+
+      <section class="d-flex justify-content-center">
+        <a href="../HTML/Homepage.html">
+          <img src="../src/TuLogo.png" height="200" width="200" alt="Logo" />
+        </a>
+      </section>
+
+      <section class="text-center fs-1 fw-bold">Registrarse</section>
+
+      <p class="Aviso">Todos los elementos con (*) son requeridos</p>
+
+
+
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="number" placeholder="Documento (*)" id="ID" />
+
+      </section>
+
+      <p class="Error" id="mensaje1"></p>
+
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="text" placeholder="Nombre empresa (*)" id="Nombre" />
+      </section>
+      <p class="Error" id="mensaje2"></p>
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="Number" placeholder="RUT (*)" id="RUT" />
+      </section>
+      <p class="Error" id="mensaje3"></p>
+
+
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="text" placeholder="Calle (*)" id="Calle" />
+      </section>
+      <p class="Error" id="mensaje5"></p>
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="Number" placeholder="Numero de domicilio (*)" id="Numero" />
+      </section>
+      <p class="Error" id="mensaje6"></p>
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="text" placeholder="Esquina (*)" id="Esquina" />
+      </section>
+      <p class="Error" id="mensaje7"></p>
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="text" placeholder="Barrio (*)" id="Barrio" />
+      </section>
+      <p class="Error" id="mensaje8"></p>
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/Gear.png" class="d-block" alt="imagen" />
+        </section>
+        <input class="form-control bg-light" type="number" placeholder="Telefono fijo (*)" id="Telefono" />
+      </section>
+
+      <p class="Error" id="mensaje9"></p>
+      <br>
+
+      <section class="input-group mt-4">
+        <section class="input-group-text bg-warning">
+          <img src="../src/user.png" class="d-block" alt="Usuario" />
+        </section>
+        <input class="form-control bg-light" type="Email" placeholder="Email empresa (*)" id="Email" />
+      </section>
+
+      <p class="Error" id="mensaje10"></p>
+
+      <section class="input-group mt-1">
+        <section class="input-group-text bg-warning ">
+          <img src="../src/Lock.png" class="d-block" alt="Contraseña">
+        </section>
+        <input class="form-control bg-light" type="password" placeholder="Contraseña (*)" id="Contra" />
+
+      </section>
+
+      <p class="Error" id="mensaje11"></p>
+
+      <section class="d-flex justify-content-around mt-1">
+
+
+      </section>
+      <button class="btn btn-warning text-black w-100 mt-4 fw-semibold shadow-sm" id="btnaceptar">
+        Registrarse
+      </button>
+      <p class="Error" id="mensaje12"></p>
+
+      <section class="d-flex gap-1 justify-content-center mt-1">
+        <section>Ya tienes una cuenta?</section>
+        <a href="Login.html" class="text-decoration-none text-warning fw-semibold">Iniciar sesion</a>
+
+
+      </section>
+
+    </section>
+  </main>
+</body>
+
+</html>
