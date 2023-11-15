@@ -39,7 +39,7 @@ $(document).ready(function () {
             var tbody = $('<tbody></tbody>');
             menus.forEach(menu => {
                 // Asegúrate de que la URL de la imagen está correctamente formateada
-                var row = `<tr><td>${menu.ID_Menu}</td><td>${menu.Nombre}</td><td>${menu.Precio}</td><td>${menu.Tipo_Menu}</td><td>${menu.fecha_creacion}</td><td><img height="70px" src="data:image/jpeg;base64,${menu.imagen}" alt="Imagen del menú"></td></tr>`;
+                var row = `<tr><td>${menu.ID_Menu}</td><td>${menu.Nombre}</td><td>${menu.Precio}</td><td>${menu.Tipo_Menu}</td><td>${menu.fecha_creacion}</td><td><img height="70px" src="../src/menu1.png" alt="Imagen del menú"></td></tr>`;
                 tbody.append(row);
             });
 
@@ -50,6 +50,9 @@ $(document).ready(function () {
         } else {
             console.error('Los datos recibidos no son un array de menús o el array está vacío.');
         }
+
+
+        
     }
 
 });

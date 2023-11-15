@@ -4,7 +4,7 @@ include 'conexion.php';
 
 try {
     // Consulta para obtener todos los menús registrados
-    $select_menus_stmt = $db->prepare("SELECT ID_Menu, Nombre, Precio ,Tipo_Menu, fecha_creacion, imagen FROM menu");
+    $select_menus_stmt = $db->prepare("SELECT ID_Menu, Nombre, Precio ,Tipo_Menu, fecha_creacion, descripcion, imagen FROM menu");
     $select_menus_stmt->execute();
 
     if ($select_menus_stmt->rowCount() > 0) {
