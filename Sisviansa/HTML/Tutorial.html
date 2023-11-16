@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../CSS/Tutorial.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Sisviansa-Homepage</title>
+  <!-- Icono-->
+  <link rel="icon" type="image/png" href="../src/TuLogo.png">
+  <!-- CSS -->
+  <!--Bootstrap CSS-->
+  <link href="../Boostrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+  <!-- JavaScript -->
+  <!-- jQuery, Popper.js + Bootstrap JS o Boostrap con Popper inc. -->
+  <script src="../Boostrap/js/jquery-3.3.1.min.js"></script>
+  
+  <script src="../Boostrap/js/bootstrap.bundle.js"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle     -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <nav class="shadow-lg navbar navbar-expand-lg fixed-top">
+    <section class="container-fluid">
+      <a class="navbar-brand" href="../HTML/Homepage.html">
+        <!-- Icono -->
+        <img src="../src/TuLogo.png" width="60" height="60" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Titulos encabezado -->
+      <section class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="../HTML/Homepage.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HTML/Comprar.html">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Footer">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HTML/Homepage.html#Novedades">Novedades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HTML/Zonas.html">Zonas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HTML/Tutorial.html">Tutorial</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-outline-success position-relative" data-toggle="modal" data-target="#carrito">
+          <img src="../src/Cart.png" alt="Carrito" class="d-block" height="40" width="40">
+          <span id="carrito-contador"
+            class="badge badge-pill badge-danger position-absolute top-0 start-100 translate-middle">0</span>
+        </a>
+
+
+        <a class="btn btn-outline-success" id="usuario">
+          <img src="../src/user.png" alt="Usuario" class="d-block" height="40" width="40">
+        </a>
+      </section>
+
+
+    </section>
+
+
+  </nav>
+  <!-- Modal -->
+  <section class="modal fade" id="nouser" tabindex="-1" role="dialog" aria-labelledby="Sesion" aria-hidden="true">
+    <section class="modal-dialog" role="document">
+      <section class="modal-content">
+        <section class="modal-header">
+          <h5 class="modal-title" id="Sesion">Seleccione el tipo de inicio de sesion</h5>
+
+
+          </button>
+        </section>
+        <section class="modal-body">
+          <a href="../HTML/Login.html" class="btn btn-warning ">
+            Iniciar sesion
+          </a>
+          <br> <br>
+          <a href="../HTML/RegisterUsuario.html" class="btn btn-warning ">
+            Registrarse como usuario
+          </a>
+          <br> <br>
+          <a href="../HTML/RegisterEmpresa.html" class="btn btn-warning ">
+            Registrarse como empresa
+          </a>
+        </section>
+        <section class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="volver">Volver</button>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <!-- Modal "user" -->
+  <section class="modal fade" id="user" tabindex="-1" role="dialog" aria-labelledby="Sesion" aria-hidden="true">
+    <section class="modal-dialog" role="document">
+      <section class="modal-content">
+        <section class="modal-header">
+          <h5 class="modal-title" id="Sesion">Seleccione el tipo de inicio de sesion</h5>
+
+
+          </button>
+        </section>
+        <section class="modal-body">
+          
+          <button type="button" class="btn btn-warning" id="cerrarSesionBtn">Cerrar sesión</button>
+        </section>
+        <section class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="volver1">Volver</button>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <!-- Modal "admin" -->
+  <section class="modal fade" id="admin" tabindex="-1" role="dialog" aria-labelledby="Sesion" aria-hidden="true">
+    <section class="modal-dialog" role="document">
+      <section class="modal-content">
+        <section class="modal-header">
+          <h5 class="modal-title" id="Sesion">Seleccione el tipo de inicio de sesion</h5>
+
+
+          </button>
+        </section>
+        <section class="modal-body">
+
+          <button type="button" class="btn btn-warning" id="cerrarSesionBtn">Cerrar sesión</button>
+          <br> <br>
+          <a class="btn btn-warning" aria-current="page" href="../HTML/Administrar.html">Administrar</a>
+        </section>
+
+        <section class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="volver2">Volver</button>
+        </section>
+      </section>
+    </section>
+  </section>
+
+
+  <section class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="Carrito" aria-hidden="true">
+    <section class="modal-dialog" role="document">
+      <section class="modal-content">
+        <section class="modal-header">
+          <h5 class="modal-title" id="Carrito">Carrito de compras: </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </section>
+        <section class="modal-body">
+          <section class="carrito">
+            <ul id="carrito-lista"></ul>
+
+          </section>
+        </section>
+        <section class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+          <button type="button" class="btn btn-warning" id="borrarCarritoModal">Borrar Carrito</button>
+          <a href="../HTML/Pago.html" class="btn btn-outline-warning">
+            Finalizar compra
+          </a>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <main class="container-fluid">
+    <section class="container-fluid contenido">
+      <section class="row">
+
+        <section class="col-12 col-sm-12 col-md-3 col-lg-3 colmap">
+          <h2>
+            Paso 1
+          </h2>
+          <p>Inicia sesion o crea tu cuenta</p>
+          <p>Todavia no lo hiciste?</p>
+          <a href="../HTML/Login.html" class="text-decoration-none text-warning fw-semibold">Inicia sesion</a>
+        </section>
+
+        <section class="col-12 col-sm-12 col-md-3 col-lg-3 colmap">
+          <h2>
+            Paso 2
+          </h2>
+          <p>Elige tus platos y menús</p>
+          <p>No olvides especificar la cantidad y el tipo de menu.</p>
+          <a href="../HTML/Comprar.html" class="text-decoration-none text-warning fw-semibold">Compra</a>
+        </section>
+
+        <section class="col-12 col-sm-12 col-md-3 col-lg-3 colmap">
+          <h2>
+            Paso 3
+          </h2>
+          <p>Ve al carrito arriba a la derecha para consultar tu pedido</p>
+          <p>Realiza la compra completando las especificaciones</p>
+        </section>
+
+        <section class="col-12 col-sm-12 col-md-3 col-lg-3 colmap">
+          <h2>
+            Paso 4
+          </h2>
+          <p>Especifica como quieres recibir tu pedido</p>
+          <p>Puedes venir a buscar el pedido a nuestras sucursales o solicitar una entrega a delivey</p>
+        </section>
+
+      </section>
+    </section>
+
+    <section class="colmap">
+      <h2>
+        Paso 5
+      </h2>
+
+      <p>Disfruta!</p>
+      <a id="Ayuda"></a>
+      <p>Nuestras comidad estan hechas con mucho esfuerzo y cariño</p>
+
+    </section>
+
+    <section class="faq-section">
+      <h2>Preguntas Frecuentes (FAQ)</h2>
+      <ul class="faq-list">
+        <li>
+          <h3>Pregunta 1: ¿Puedo personalizar mi pedido?</h3>
+          <p>Si, al elegir el menu que desea comprar puede elegir su cantidad y tipo (Semanal, Mensual, etc.) .</p>
+        </li>
+        <li>
+          <h3>Pregunta 2: ¿Cuantos pedidos puedo hacer?</h3>
+          <p>Se puede realizar una cantidad ilimitada de pedidos, una vez seleccionados sus menus , puede dirijirse al
+            carrito de compras para dar por terminado su compra.</p>
+        </li>
+        <li>
+          <h3>Pregunta 3: ¿Que opciones de pago se aceptan?</h3>
+          <p>Se aceptan una gran variedad de metodos de pago, entre algunas de ellas estan: Mercado Pago, VIsa,
+            Mastercard, etc.</p>
+        </li>
+
+        <li>
+          <h3>Pregunta 4: ¿Ofrecen menus especiales para dietas especificas?</h3>
+          <p>Si, ofrecemos una gran variedad de menus para cualquier tipo de dieta.</p>
+        </li>
+        <li>
+          <h3>Pregunta 5: ¿Se aceptan devoluciones y reembolsos?</h3>
+          <p>NO, hagame el favor de terminar su comida.</p>
+        </li>
+
+        <li>
+          <h3>Pregunta 6: ¿Que hago si olvido mi contraseña?</h3>
+          <p>Simplemente contactese con nuestro personal sobre el asunto, y le daremos su contraseña instantaneamente.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <br>
+  </main>
+
+
+  <!-- Footer-->
+
+  <a id="Footer"></a>
+
+  <footer class="pie-pagina">
+    <section class="parte-1">
+      <section class="box">
+        <figure>
+          <a href="#">
+            <img src="../src/TuLogo.png" alt="Logo">
+          </a>
+        </figure>
+      </section>
+
+      <section class="box">
+        <h2>CONTACTO </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </section>
+
+      <section class="box">
+        <h2>SEGUINOS </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </section>
+
+
+    </section>
+    <section class="parte-2">
+      <small><a href="https://doorsco.wordpress.com">
+          ©2023 DOORS
+        </a></small>
+
+
+    </section>
+
+  </footer>
+
+  <script src="../JS/carrito.js"></script>
+  <script src="../JS/verificar.js"></script>
+</body>
+
+</html>
